@@ -1,0 +1,69 @@
+/* COMMON */
+*{
+	box-sizing: border-box;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	padding: 20px 30px 31px 30px;
+}
+/* CONTENT */
+.titleWrapper{
+	display: flex;
+	align-items: baseline;
+}
+.content-title{
+	font-size: 13px;
+	color: #55B2D4;
+	font-weight: 700;
+	margin-right: 5px;
+}
+.content-subtitle{
+	font-size: 8px;
+}
+
+/* UPDATED NEWS */
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+.wrapper__header{
+	width: 100%;
+	height: 20%;
+}
+.separate-line{
+	width: 100%;
+	margin: 8px 0;
+	border-top: 1px solid #999999;
+}
+.news-content{
+	width: 100%;
+}
+.news-content p{
+	font-size: 11px;
+	color: #999999;
+}
+
+/* MY VIDEO */
+.wrapper__body{
+	width: 100%;
+	height: 80%;
+	/* background-color: whitessmoke; */
+	display: flex;
+	align-items: flex-end;
+}
+.videoWrapper{
+	width: 200%;
+}
+.video-content{
+	width: 100%;
+	height: 240px;
+	margin-top: 13px;
+	background-color: #999;
+}
+.video-content video{
+	width: 100%;
+	height: 100%;
+}

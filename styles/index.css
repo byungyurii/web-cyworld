@@ -1,0 +1,152 @@
+/* COMMON */
+*{
+	box-sizing: border-box;
+}
+
+.background{
+	background-image: url("../images/background.png");
+	width: 1024px;
+	height: 600px;
+	padding: 20px 0 0 20px;
+}
+.outerbox{
+	background-image: url("../images/outerbox.png");
+	width: 808px;
+	height: 544px;
+}
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	padding: 32px 0 0 32px;
+}
+/* LEFT */
+.wrapper__left{
+	width: 208px;
+	height: 472px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	/* background-color: lightpink; */
+
+}
+.wrapper__left__header{
+
+}
+.today{
+	padding-bottom: 8px;
+	font-size: 9px;
+}
+.today .Zero{
+	color: red;
+	font-size: 11px;
+}
+.today .count{
+	font-size: 11px;
+}
+/* LEFT-PROFILE */
+.wrapper__left__body{
+	width: 208px;
+	height: 496px;
+	border: 2px solid lightgray;
+	display : flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 15px;
+	padding: 20px 30px 31px 30px;
+	background-color: white;
+}
+.wrapper__left__body .top{
+	height: 70%;
+	width: 100%;
+}
+.top .profile-pic{
+	width: 148px;
+	height: 133px;
+	background-color: lightgrey;
+}
+.seperate-line{
+	margin: 12px 0;
+	border: 1px dotted #000;
+}
+.top .profile-detail{
+	height: 72px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+ .top .profile-detail div{
+	height: 12px;
+	color: grey;
+	font-size: 9px;
+	font-weight: 700;
+}
+.profile-detail div i{
+	width: 12px;
+	margin-right: 8px;
+}
+.wrapper__left__body .bottom{
+	height: 30%;
+	width: 100%;
+	/* background-color: greenyellow; */
+	display: flex;
+	/* flex-direction: column;
+	justify-content: flex-end; */
+	align-items: flex-end;
+}
+.moodWrapper {
+	width: 141px;
+	height: 41px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.mood{
+	margin-bottom: 8px;
+	font-size: 11px;
+}
+.mood-select{
+	width: 141px;
+}
+
+/* RIGHT */
+.wrapper__right{
+	width: 524px;
+	height: 472px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* RIGHT-HEADER */
+.wrapper__right__header{
+	height: 44px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 8px;
+}
+.home-title{
+	margin-left: 30px;
+	font-size: 16px;
+	color: #5582d4;
+}
+.privacy-setting{
+	font-size: 13px;
+	line-height: 16px;
+}
+.privacy-setting i{
+	color: orange;
+}
+.wrapper__right__body{
+	width: 524px;
+	height: 496px;
+	border: 2px solid lightgray;
+	border-radius: 15px;
+	background-color: white;
+}
+
+iframe{
+	height: 100%;
+	width: 100%;
+}
