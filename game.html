@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>게임</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+	<link rel="stylesheet" href="./styles/reset.css">
+	<link rel="stylesheet" href="./styles/game.css">
+
+	<script>
+		const checkword = () => {
+			const original = document.getElementById('word').innerText
+			const newWord = document.getElementById('myword').value
+			if (original[original.length - 1] === newWord[0])
+			{
+				document.getElementById('result').innerText = '성공!';
+				document.getElementById('word').innerText = newWord;
+				document.getElementById('myword').value="";
+			}
+			else{
+				document.getElementById('result').innerText = '틀림 ㅋ';
+				document.getElementById('myword').value="";
+			}
+		}
+		const setLotto = () => {
+			let randomArray = [];
+			let randomNum;
+			for (i = 0; i < 6; i++)
+			{
+				randomNum = Math.floor(Math.random() * 60 ) + 1;
+				if(randomArray.indexOf(randomNum) == -1)
+					randomArray.push(randomNum)
+				else
+					i--;
+			}
+			console.log(randomArray)
+			let num = ["1","2","3","4","5","6"]
+			num = num.map((data) => "num" + data)
+			console.log(num)
+			for ( i = 0; i < 6; i++)
+			{
+				document.getElementById(num[i]).innerText = randomArray[i];
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__header">
+			<span class="content-title">GAME</span>
+			<span class="content-subtitle">TODAY CHOICE</span>
+		</div>
+		<div class="wrapper__word game-content-box">
+			<div class="game-content__header">
+				<img src="./images/word.png" alt="word">
+				<div class="game-content--title">끝말잇기</div>
+				<div class="game-content--subtitle">제시어:<span id="word">뉴비즈코드</span></div>
+			</div>
+			<div class="game-content__content">
+				<input id="myword" type="text" class="text" placeholder=" 단어를 입력하세요." onchange='checkword()'>
+				<button onclick="checkword()" class="game-content--button" >검색</button>
+			</div>
+			<div id = "result" class="game-content__footer">결과</div>
+		</div>
+		<div class="wrapper__lotto game-content-box">
+			<div class="game-content__header">
+				<img src="./images/lotto.png" alt="lotto">
+				<div class="game-content--title">LOTTO</div>
+				<div class="game-content--subtitle">버튼을 누르세요</div>
+			</div>
+			<div class="game-content__content">
+				<span id="num1">3</span>
+				<span id="num2">5</span>
+				<span id="num3">10</span>
+				<span id="num4">24</span>
+				<span id="num5">30</span>
+				<span id="num6">34</span>
+			</div>
+			<div class="game-content__footer">
+				<button class="game-content--button" onclick="setLotto()">Button</button></div>
+
+		</div>
+	</div>
+</body>
+
+</html>

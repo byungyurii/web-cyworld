@@ -1,0 +1,127 @@
+/* COMMON */
+*{
+	box-sizing: border-box;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+.wrapper {
+	width: 100%;
+	height: 100%;
+	padding: 20px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	/* background-color: yellow; */
+}
+
+/* CONTENT */
+.game-content-box{
+	width: 222px;
+	height: 168px;
+	background-color: #f6f6f6;
+	border: 1px solid gray;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.game-content__header{
+	padding-top: 10px;
+	height: 58px;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	align-items: center;
+}
+.game-content__header i{
+	padding-bottom: 8px;
+}
+.game-content--title{
+	font-size: 11px;
+	font-weight: 700;
+}
+.game-content--subtitle{
+	font-size: 10px;
+	font-weight: 700;
+	color: #999;
+	padding-top: 3.5px;
+}
+.game-content--button{
+	height: 24px;
+	font-size: 11px;
+	font-weight: 700px;
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	background-color: #fff;
+	border: 1px solid #000000;
+	border-radius: 5px;
+}
+/* HEADER */
+.wrapper__header{
+	height: 25px;
+	width: 100%;
+	border-bottom: 1px solid #999999;
+	/* background-color: tomato; */
+}
+.wrapper__header .content-title{
+	font-size: 13px;
+	color: #55B2D4;
+	font-weight: 700;
+	margin-right: 5px;
+}
+.wrapper__header .content-subtitle{
+	font-size: 8px;
+}
+
+/* WORD */
+.wrapper__word{
+}
+
+.wrapper__word .game-content__header img{
+	height: 20px;
+}
+.wrapper__word .game-content__content{
+	display: flex;
+
+}
+.wrapper__word .game-content__content .text{
+	width: 136px;
+	height: 24px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin-right: 8px;
+}
+.wrapper__word .game-content--subtitle .span{
+	color: #999;
+}
+.wrapper__word .game-content__footer{
+	font-size: 10px;
+	font-weight: 700;
+	color: #999;
+}
+/* LOTTO */
+.wrapper__lotto{
+
+}
+.wrapper__lotto .game-content__header img{
+	height: 24px;
+}
+.wrapper__lotto .game-content__content{
+	width: 130px;
+	height: 21px;
+	background-color: #FFE400;
+	border: 1px solid black;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.wrapper__lotto .game-content__content span{
+	font-size: 10px;
+	font-weight: 700;
+}
