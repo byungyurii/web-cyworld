@@ -6,7 +6,9 @@ html, body{
 	width: 100%;
 	height: 100%;
 }
-body{
+.wrapper{
+	width: 100%;
+	height: 100%;
 	padding: 20px 30px 31px 30px;
 }
 /* CONTENT */
@@ -31,7 +33,7 @@ body{
 }
 .wrapper__header{
 	width: 100%;
-	height: 20%;
+	height: 30%;
 }
 .separate-line{
 	width: 100%;
@@ -49,13 +51,13 @@ body{
 /* MY VIDEO */
 .wrapper__body{
 	width: 100%;
-	height: 80%;
+	height: 70%;
 	/* background-color: whitessmoke; */
 	display: flex;
 	align-items: flex-end;
 }
 .videoWrapper{
-	width: 200%;
+	width: 100%;
 }
 .video-content{
 	width: 100%;
